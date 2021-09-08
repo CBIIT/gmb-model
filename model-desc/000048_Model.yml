@@ -212,6 +212,16 @@ Nodes:
       - COMMENTS_HDR
       - NOTE_DT_SCRRSC
       - RSCH_COMMENTS_TXT_SCRRSC
+  SITE:
+    Category:
+    Props:
+      - REG_INST_ID_CD
+      - REG_INST_ID
+      - ADDRESS
+      - CONTACT
+      - PHONE
+      - EMAIL
+      - STATUS
   PI_SIGNOFF:
     Category:
     Props:
@@ -365,6 +375,13 @@ Relationships:
     Ends:
       - Src: SUBJECT
         Dst: CLINICALTRIAL
+      - Src: SITE
+        Dst: CLINICALTRIAL
+  participate_at_site:
+    Mul: One_to_one
+    Ends:
+      - Src: SUBJECT
+        Dst: SITE
   of_subject:
     Mul: many_to_one
     Ends:

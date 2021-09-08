@@ -1329,6 +1329,69 @@ PropDefinitions:
      Type: Text
      Req: false
      Private: false
+   #Property of SUBJECT,SITE
+   REG_INST_ID_CD:
+     Desc: REG_INST_ID_CD (Registering Institution)
+     Src: NA
+     Type:
+        - "NCIGMB : National Cancer Institute Genitourinary Malignancy Branch"
+        - "MI014 : University of Michigan"
+        - "WA020 : University of Washington"
+        - "MA036 : Dana Farber Cancer Institute, Boston, MA"
+        - "NY016 : Memorial Sloan Kettering Cancer Center"
+        - "CA067 : University of California San Diego"
+        - "CA478 : University of California San Francisco"
+        - "MA034 : Massachusetts General Hospital, Cancer Center"
+        - "IL045 : Lurie Cancer Center at Northwestern University"
+        - "OR010 : Oregon Health Sciences University"
+        - "NY021 : Mount Sinai Hospital"
+        - "NY018 : Weill Cornell Medicine"
+        - "CA028 : University of California at Los Angeles"
+        - "65029 : Vall d'Hebron Institute of Oncology"
+     Req: false
+     Private: true
+   #Property of SITE:
+   REG_INST_ID:
+     Desc: REG_INST_ID
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
+   #Property of SITE:
+   ADDRESS:
+     Desc: ADDRESS
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
+   #Property of SITE:
+   CONTACT:
+     Desc: CONTACT
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
+   #Property of SITE:
+   PHONE:
+     Desc: CONTACT_PHONE
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
+   #Property of SITE:
+   EMAIL:
+     Desc: CONTACT_EMAIL
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
+   #Property of SITE:
+   STATUS:
+     Desc: CONTACT_EMAIL
+     Src: NA
+     Type: Text
+     Req: true
+     Private: true
    #Property of SUBJECT,PI_SIGNOFF
    HDR1:
      Desc: HDR1 (<b>PI Signoff</b>)
@@ -1657,27 +1720,6 @@ PropDefinitions:
      Req: true
      Private: true
    #Property of SUBJECT:
-   REG_INST_ID_CD:
-     Desc: REG_INST_ID_CD (Registering Institution)
-     Src: NA
-     Type:
-        - "NCIGMB : National Cancer Institute Genitourinary Malignancy Branch"
-        - "MI014 : University of Michigan"
-        - "WA020 : University of Washington"
-        - "MA036 : Dana Farber Cancer Institute, Boston, MA"
-        - "NY016 : Memorial Sloan Kettering Cancer Center"
-        - "CA067 : University of California San Diego"
-        - "CA478 : University of California San Francisco"
-        - "MA034 : Massachusetts General Hospital, Cancer Center"
-        - "IL045 : Lurie Cancer Center at Northwestern University"
-        - "OR010 : Oregon Health Sciences University"
-        - "NY021 : Mount Sinai Hospital"
-        - "NY018 : Weill Cornell Medicine"
-        - "CA028 : University of California at Los Angeles"
-        - "65029 : Vall d'Hebron Institute of Oncology"
-     Req: false
-     Private: true
-   #Property of SUBJECT:
    PT_SUBGRP_ASSIGN_TP:
      Desc: PT_SUBGRP_ASSIGN_TP (Patient Subgroup)
      Src: NA
@@ -1743,7 +1785,7 @@ PropDefinitions:
         - "ANKRD24"
         - "APC"
         - "APOA1"
-        - "APOA2?"
+        - "APOA2 "
         - "AR"
         - "ARAF"
         - "ARFGAP3"
