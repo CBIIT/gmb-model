@@ -268,6 +268,28 @@ Nodes:
   PHYSICAL_EXAM_SCREENING:
     Category:
     Props:
+      - PES_HDR_1
+      - PT_PHYS_IND2
+      - EVAL_DT
+      - PES_HDR_2
+      - EVAL_DT_1
+      - PROC_TM
+      - RSCH_COMMENTS_TXT_1
+      - KARN_PERF_STAT_SC
+      - ZUBROD_PERF_STAT_SC
+      - BDY_WT_KG
+      - PERS_HT_CM
+      - PERS_BSA_VAL
+      - TEMP_CELS_SCL_VAL
+      - PULSE_RATE_MSRMT_VAL
+      - SYST_BP_VAL
+      - DIAST_BP_VAL
+      - P_VS_RR_PHYSEXM_VAL
+      - PULS_OXIM_VAL
+      - RSCH_COMMENTS_IND
+      - COMMENTS_HDR
+      - NOTE_DT_SCRPE
+      - RSCH_COMMENTS_TXT_SCRPE
   SUBJECT:
     Category:
     Props:
@@ -295,31 +317,6 @@ Nodes:
       - COMMENTS_HDR
       - NOTE_DT_GRMLN
       - RSCH_COMMENTS_TXT_GRMLN
-  PHYSICAL_EXAM___SCREENING:
-    Category:
-    Props:
-      - PES_HDR_1
-      - PT_PHYS_IND2
-      - EVAL_DT
-      - PES_HDR_2
-      - EVAL_DT_1
-      - PROC_TM
-      - RSCH_COMMENTS_TXT_1
-      - KARN_PERF_STAT_SC
-      - ZUBROD_PERF_STAT_SC
-      - BDY_WT_KG
-      - PERS_HT_CM
-      - PERS_BSA_VAL
-      - TEMP_CELS_SCL_VAL
-      - PULSE_RATE_MSRMT_VAL
-      - SYST_BP_VAL
-      - DIAST_BP_VAL
-      - P_VS_RR_PHYSEXM_VAL
-      - PULS_OXIM_VAL
-      - RSCH_COMMENTS_IND
-      - COMMENTS_HDR
-      - NOTE_DT_SCRPE
-      - RSCH_COMMENTS_TXT_SCRPE
   FOLLOW_UP_THERAPY:
     Category:
     Props:
@@ -378,7 +375,7 @@ Relationships:
       - Src: SITE
         Dst: CLINICALTRIAL
   participate_at_site:
-    Mul: One_to_one
+    Mul: many_to_one
     Ends:
       - Src: SUBJECT
         Dst: SITE

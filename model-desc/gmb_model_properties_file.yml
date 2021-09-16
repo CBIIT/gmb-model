@@ -1149,14 +1149,6 @@ PropDefinitions:
      Type: Text
      Req: false
      Private: false
-   #Property of FormOID:
-   FieldOID:
-     Desc: DraftFieldName (PreText)
-     Src: NA
-     Type:
-        - "UserDataString"
-     Req: false
-     Private: false
    #Property of FOLLOW_UP:
    LAST_CONTACT_DT:
      Desc: LAST_CONTACT_DT (Date of Last Contact)
@@ -1284,7 +1276,7 @@ PropDefinitions:
    FILE_SIZE:
      Desc: FILE_SIZE
      Src: NA
-     Type: Text
+     Type: integer
      Req: true
      Private: true
    #Property of FILE:
@@ -1358,8 +1350,8 @@ PropDefinitions:
      Req: true
      Private: true
    #Property of SITE:
-   ADDRESS:
-     Desc: ADDRESS
+   LOCATION:
+     Desc: LOCATION
      Src: NA
      Type: Text
      Req: true
@@ -1785,7 +1777,7 @@ PropDefinitions:
         - "ANKRD24"
         - "APC"
         - "APOA1"
-        - "APOA2 "
+        - "APOA2"
         - "AR"
         - "ARAF"
         - "ARFGAP3"
