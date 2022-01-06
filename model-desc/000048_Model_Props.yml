@@ -1237,7 +1237,7 @@ PropDefinitions:
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_TYPE:
      Desc: FILE_TYPE
@@ -1257,56 +1257,56 @@ PropDefinitions:
         - "Variant Report # for reports detailing validated variants"
         - "Data Analysis Whitepaper # for any document detailing a data analysis pipeline and/or methodology"
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_DESCRIPTION:
      Desc: FILE_DESCRIPTION
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_FORMAT:
      Desc: FILE_FORMAT
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_SIZE:
      Desc: FILE_SIZE
      Src: NA
      Type: integer
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    MD5SUM:
      Desc: MD5SUM
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_STATUS:
      Desc: FILE_STATUS
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    UUID:
      Desc: UUID
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of FILE:
    FILE_LOCATION:
      Desc: FILE_LOCATION
      Src: NA
      Type: Text
      Req: true
-     Private: true
+     Private: false
    #Property of STORAGE:
    NOTE_DT_SCRRSC:
      Desc: NOTE_DT_SCRRSC (Date)
